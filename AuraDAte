@@ -1,0 +1,9 @@
+ var current_datetime = new Date();  
+          var monthCondition = (current_datetime.getMonth()+1)>9?"-":"-0";
+        var hourCondition = (current_datetime.getHours())>9?"":"0";
+        var minutCondition = (current_datetime.getMinutes())>9?":":":0";
+         var secondCondition = (current_datetime.getSeconds())>9?":":":0";
+          var formatted_date = current_datetime.getFullYear() + monthCondition + (current_datetime.getMonth()+1) + "-" + current_datetime.getDate() + "T" +hourCondition+ (current_datetime.getHours()+7) + minutCondition + current_datetime.getMinutes() + secondCondition + current_datetime.getSeconds()+"Z";
+  		  var formatted_dat = current_datetime.getFullYear() +''+  (current_datetime.getMonth()+1)  +''+ current_datetime.getDate() + ''+  current_datetime.getHours() +''+  current_datetime.getMinutes() +''+  current_datetime.getSeconds();
+        var format_date = current_datetime.getFullYear() + monthCondition + (current_datetime.getMonth()+1) + "-" + current_datetime.getDate();
+        
